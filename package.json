@@ -1,0 +1,22 @@
+{
+  "name": "quill-kalam",
+  "private": true,
+  "packageManager": "pnpm@8.15.4",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "docker:db": "docker compose -f docker/docker-compose.dev.yml up -d",
+    "dev:web": "turbo run dev --filter=web",
+    "dev:cms": "turbo run dev --filter=cms",
+    "dev:api": "turbo run dev --filter=ai",
+    "dev:all": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.0"
+  }
+}

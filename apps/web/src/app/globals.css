@@ -1,0 +1,123 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+html,
+body,
+:root {
+  height: 100%;
+}
+
+:root {
+  /* Primary Colors - Ink-inspired deep blue */
+  --primary: oklch(0.45 0.18 250);      /* Ink Blue */
+  --primary-foreground: oklch(0.98 0 0); /* White */
+  
+  /* Secondary Colors - Paper-inspired warm tone */
+  --secondary: oklch(0.75 0.12 80);     /* Parchment Gold */
+  --secondary-foreground: oklch(0.2 0.02 260); /* Dark Text */
+  
+  /* Accent Colors - For highlights and important interactions */
+  --accent: oklch(0.6 0.18 30);         /* Bookmark Red */
+  --accent-foreground: oklch(0.98 0 0); /* White */
+  
+  /* Reading Mode Colors */
+  --reading-bg: oklch(0.98 0.02 80);    /* Cream Paper */
+  --reading-text: oklch(0.2 0.01 0);    /* Soft Black */
+  
+  /* Chart Colors (for analytics, reviews, ratings) */
+  --chart-1: oklch(0.45 0.18 250);      /* Ink Blue */
+  --chart-2: oklch(0.6 0.18 30);        /* Bookmark Red */
+  --chart-3: oklch(0.75 0.12 80);       /* Parchment Gold */
+  --chart-4: oklch(0.6 0.15 160);       /* Editor Green */
+  --chart-5: oklch(0.55 0.18 290);      /* Author Purple */
+  
+  /* Background Colors */
+  --background: oklch(0.98 0.01 80);    /* Soft Cream */
+  --foreground: oklch(0.2 0.01 0);      /* Soft Black */
+  
+  /* Card and UI Element Colors */
+  --card: oklch(1 0 0);                 /* White */
+  --card-foreground: oklch(0.2 0.01 0); /* Soft Black */
+  --popover: oklch(1 0 0);              /* White */
+  --popover-foreground: oklch(0.2 0.01 0); /* Soft Black */
+  
+  /* UI Colors */
+  --muted: oklch(0.9 0.03 80);          /* Light Parchment */
+  --muted-foreground: oklch(0.4 0.03 260);
+  --destructive: oklch(0.65 0.28 30);   /* Error Red */
+  --border: oklch(0.75 0.05 80 / 30%);
+  --input: oklch(0.75 0.05 80 / 30%);
+  --ring: oklch(0.45 0.15 250 / 50%);   /* Ink Blue Focus */
+  
+  /* Special Feature Colors */
+  --highlight: oklch(0.85 0.1 90 / 40%); /* Text Highlight Yellow */
+  --comment: oklch(0.6 0.15 160);        /* Comment Green */
+  --draft: oklch(0.3 0.05 260 / 10%);    /* Draft Watermark */
+}
+
+.dark {
+  /* Dark Theme - Night Reading Mode */
+  --background: oklch(0.15 0.02 250);    /* Dark Navy */
+  --foreground: oklch(0.85 0.02 80);     /* Soft Parchment */
+  
+  /* Reading Mode Colors - Dark */
+  --reading-bg: oklch(0.12 0.01 260);    /* Dark Paper */
+  --reading-text: oklch(0.85 0.02 80);   /* Soft Cream Text */
+  
+  /* Card and UI Element Colors */
+  --card: oklch(0.2 0.03 250);           /* Midnight Blue */
+  --card-foreground: oklch(0.85 0.02 80);
+  --popover: oklch(0.2 0.03 250);
+  --popover-foreground: oklch(0.85 0.02 80);
+  
+  /* UI Colors */
+  --muted: oklch(0.25 0.03 250);         /* Deep Navy */
+  --muted-foreground: oklch(0.7 0.05 80);
+  --border: oklch(0.35 0.05 250 / 30%);
+  --input: oklch(0.35 0.05 250 / 30%);
+  
+  /* Special Feature Colors - Dark Mode */
+  --highlight: oklch(0.5 0.1 80 / 40%);   /* Dark Highlight */
+  --draft: oklch(0.7 0.05 260 / 15%);     /* Night Draft Watermark */
+}
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

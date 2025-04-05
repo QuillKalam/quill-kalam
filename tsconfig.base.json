@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "lib": ["esnext"],
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@quillkalam/types": ["packages/types/src"],
+      "@quillkalam/utils": ["packages/utils/src"],
+      "@quillkalam/ui": ["packages/ui/src"]
+    },
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}

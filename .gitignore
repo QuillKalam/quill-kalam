@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+.pnpm/
+
+# Build output
+dist/
+.next/
+out/
+build/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Log files
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+
+# Turbo cache
+turbo/
+.cache/
+
+# Python (FastAPI - apps/ai)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+*.egg-info/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Others
+*.local
+*.swp
+*.swo
