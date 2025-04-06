@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { useEditor, EditorContent } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
 import Placeholder from "@tiptap/extension-placeholder";
@@ -13,7 +13,7 @@ import Link from "@tiptap/extension-link";
 import TextStyle from "@tiptap/extension-text-style";
 import Color from "@tiptap/extension-color";
 import Typography from "@tiptap/extension-typography";
-import Document from "@tiptap/extension-document";
+import FontFamily from "@tiptap/extension-font-family";
 import Toolbar from "./Toolbar";
 import FormatPanel from "./FormatPanel";
 import StatusBar from "./StatusBar";
@@ -21,6 +21,8 @@ import WordCountWidget from "./WordCountWidget";
 import { debounce } from "lodash";
 import ChapterExtension from "@/extensions/ChapterExtension";
 import ScreenplayExtension from "@/extensions/ScreenplayExtension";
+import { LineHeight } from "@/extensions/LineHeight";
+import { FontSize } from "@/extensions/FontSize";
 
 interface WritingEditorProps {
   initialContent: string;
@@ -61,6 +63,9 @@ const WritingEditor: React.FC<WritingEditorProps> = ({
       }),
       CharacterCount,
       Highlight,
+      FontFamily.configure({
+        types: ["textStyle"],
+      }),
       TextAlign.configure({
         types: ["heading", "paragraph"],
       }),
@@ -75,6 +80,8 @@ const WritingEditor: React.FC<WritingEditorProps> = ({
       TextStyle,
       Color,
       Typography,
+      LineHeight,
+      FontSize,
     ],
     content: initialContent,
     autofocus: "end",
@@ -89,11 +96,12 @@ const WritingEditor: React.FC<WritingEditorProps> = ({
   });
 
   // Debounced save function
-  const debouncedSave = useCallback(
-    debounce((content) => {
-      onUpdate(content);
-      setAutoSaveStatus("Saved");
-    }, 1000),
+  const debouncedSave = useMemo(
+    () =>
+      debounce((content) => {
+        onUpdate(content);
+        setAutoSaveStatus("Saved");
+      }, 1000),
     [onUpdate]
   );
 

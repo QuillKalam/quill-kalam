@@ -1,10 +1,10 @@
 import React from "react";
 import { X } from "lucide-react";
+import { Editor } from "@tiptap/core"; // Import Editor type from TipTap
 import { Label } from "@radix-ui/react-label";
 import { Button } from "../ui/button";
-
 interface FormatPanelProps {
-  editor: any; // Replace 'any' with the specific type if available
+  editor: Editor; // Replace 'Editor' with the correct type from your editor library
   editorMode: "novel" | "screenplay"; // Adjust the union type based on your use case
   onClose: () => void;
 }

@@ -5,8 +5,6 @@ import React, { useState, useEffect, useCallback, useRef } from "react";
 import Sidebar from "@/components/tiptap/Sidebar";
 import WritingEditor from "@/components/tiptap/WritingEditor";
 
-import { Button } from "@/components/ui/button";
-
 interface Document {
   id: string;
   title: string;
@@ -117,7 +115,7 @@ export default function Studio() {
       // Mark as initialized
       initRef.current = true;
     }
-  }, []); // Empty dependency array - run only once
+  }, [currentDocId, documents, setCurrentDocId, setDocuments]); // Empty dependency array - run only once
 
   return (
     <React.Fragment>
