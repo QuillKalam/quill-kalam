@@ -74,7 +74,7 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
-        {session && <Navbar />}
+        <Navbar />
         {children}
       </body>
     </html>
