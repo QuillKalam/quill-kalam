@@ -169,12 +169,7 @@ pnpm install
 
 If you have _**migrations**_ directory at location `/apps/web/prisma` delete it.
 
-- Create a new file named `.env` at `/apps/web` of the project and add the following environment variables:
-
-```bash
-DATABASE_URL="postgresql://quillkalam:password@localhost:5432/quillkalam_db"
-AUTH_SECRET="<Any value>"
-```
+- Create a new file named `.env` at `/apps/web` of the project and copy the contents of `env.md` into it.
 
 - Run command
 
