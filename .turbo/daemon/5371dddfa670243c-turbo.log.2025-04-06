@@ -1,2 +1,20 @@
 2025-04-06T14:56:43.258536Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
 2025-04-06T14:56:43.572370Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2025-04-06T15:36:25.336168Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2025-04-06T15:36:26.815910Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2025-04-06T15:46:40.514635Z  WARN turborepo_filewatch::globwatcher: encountered filewatching error, flushing all globs: channel lagged by 211
+2025-04-06T15:46:40.517481Z  WARN turborepo_filewatch::globwatcher: encountered filewatching error, flushing all globs: channel lagged by 74
+2025-04-06T15:46:40.518358Z  WARN turborepo_filewatch::globwatcher: encountered filewatching error, flushing all globs: channel lagged by 7
+2025-04-06T16:15:41.378741Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2025-04-06T16:15:41.406066Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2025-04-06T16:17:44.086220Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2025-04-06T16:17:44.089501Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2025-04-06T16:19:52.730535Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2025-04-06T16:19:52.781370Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2025-04-06T16:25:48.960396Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2025-04-06T16:25:49.317772Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2025-04-06T16:27:15.438132Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2025-04-06T16:27:15.702435Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2025-04-06T16:28:59.393759Z  WARN turborepo_filewatch: failed to remove cookie file failed to remove file `A:\quill-kalam\.turbo\cookies\.turbo-cookie`
+2025-04-06T16:28:59.622709Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2025-04-06T16:28:59.777960Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running

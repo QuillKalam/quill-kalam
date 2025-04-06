@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "../ui/button";
-import { useEditor } from "@tiptap/react";
+import { Editor } from "@tiptap/core";
 import {
   Bold,
   Italic,
@@ -19,10 +19,6 @@ import {
   Redo,
   Settings,
   Download,
-  Save,
-  FileText,
-  Film,
-  Book,
 } from "lucide-react";
 
 const Toolbar = ({
@@ -30,7 +26,7 @@ const Toolbar = ({
   setShowFormatPanel,
   editorMode,
 }: {
-  editor: any;
+  editor: Editor;
   setShowFormatPanel: (value: boolean) => void;
   editorMode: string;
 }) => {
