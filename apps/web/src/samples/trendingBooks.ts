@@ -1,4 +1,5 @@
 const trendingBooks: {
+  position: number;
   title: string;
   rating: number;
   type: string;
@@ -9,6 +10,7 @@ const trendingBooks: {
   published: string;
 }[] = [
   {
+    position: 1,
     title: "Solo Leveling",
     rating: 9.1,
     type: "Web Novel",
@@ -20,6 +22,7 @@ const trendingBooks: {
     published: "2016-03-25",
   },
   {
+    position: 2,
     title: "Omniscient Reader's Viewpoint",
     rating: 9.3,
     type: "Web Novel",
@@ -31,6 +34,7 @@ const trendingBooks: {
     published: "2018-01-30",
   },
   {
+    position: 3,
     title: "The Beginning After The End",
     rating: 8.9,
     type: "Web Novel",
@@ -42,6 +46,7 @@ const trendingBooks: {
     published: "2017-01-18",
   },
   {
+    position: 4,
     title: "Reverend Insanity",
     rating: 9.0,
     type: "Web Novel",
@@ -53,6 +58,7 @@ const trendingBooks: {
     published: "2012-06-20",
   },
   {
+    position: 5,
     title: "Lord of the Mysteries",
     rating: 9.4,
     type: "Web Novel",
@@ -64,6 +70,7 @@ const trendingBooks: {
     published: "2018-04-15",
   },
   {
+    position: 6,
     title: "Warlock of the Magus World",
     rating: 8.7,
     type: "Web Novel",
@@ -75,6 +82,7 @@ const trendingBooks: {
     published: "2015-05-10",
   },
   {
+    position: 7,
     title: "Trash of the Count’s Family",
     rating: 8.8,
     type: "Web Novel",
@@ -86,6 +94,7 @@ const trendingBooks: {
     published: "2018-06-14",
   },
   {
+    position: 8,
     title: "Mother of Learning",
     rating: 9.2,
     type: "Web Novel",
@@ -97,6 +106,7 @@ const trendingBooks: {
     published: "2011-10-05",
   },
   {
+    position: 9,
     title: "The Legendary Mechanic",
     rating: 8.9,
     type: "Web Novel",
@@ -108,6 +118,7 @@ const trendingBooks: {
     published: "2017-12-12",
   },
   {
+    position: 10,
     title: "Super Gene",
     rating: 8.5,
     type: "Web Novel",
@@ -119,6 +130,7 @@ const trendingBooks: {
     published: "2016-04-20",
   },
   {
+    position: 11,
     title: "Overgeared",
     rating: 8.6,
     type: "Web Novel",
@@ -130,6 +142,7 @@ const trendingBooks: {
     published: "2017-01-10",
   },
   {
+    position: 12,
     title: "The Second Coming of Gluttony",
     rating: 8.8,
     type: "Web Novel",
@@ -141,6 +154,7 @@ const trendingBooks: {
     published: "2018-02-22",
   },
   {
+    position: 13,
     title: "The Great Mage Returns After 4000 Years",
     rating: 8.7,
     type: "Web Novel",
@@ -152,6 +166,7 @@ const trendingBooks: {
     published: "2019-03-17",
   },
   {
+    position: 14,
     title: "Kill the Hero",
     rating: 8.4,
     type: "Web Novel",
@@ -163,6 +178,7 @@ const trendingBooks: {
     published: "2019-06-09",
   },
   {
+    position: 15,
     title: "Supremacy Games",
     rating: 8.7,
     type: "Web Novel",
