@@ -149,16 +149,12 @@ export default function Navbar() {
                 </Button>
               </div>
             ) : (
-              <></>
-              // <form
-              //   action={async () => {
-              //     "use server";
-
-              //     await signOut();
-              //   }}
-              // >
-              //   <Button>Sign Out</Button>
-              // </form>
+              <div className="flex items-center gap-4">
+                <Button className={buttonVariants({ variant: "secondary" })}>
+                  Sign out
+                </Button>
+              </div>
+              
             )}
           </div>
         </div>
