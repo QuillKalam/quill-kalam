@@ -7,6 +7,7 @@ html,
 body,
 :root {
   height: 100%;
+  background-image: var(--gradient-primary);
 }
 
 :root {
@@ -42,38 +43,64 @@ body,
   --sidebar-accent-foreground: oklch(0.21 0.006 285.885);
   --sidebar-border: oklch(0.92 0.004 286.32);
   --sidebar-ring: oklch(0.623 0.214 259.815);
+
+  --gradient-primary: linear-gradient(
+    135deg,
+    oklch(0.98 0.01 260) 0%,
+    oklch(0.99 0.02 240) 100%
+  );
+  --gradient-secondary: linear-gradient(
+    135deg,
+    oklch(0.88 0.07 240) 0%,
+    oklch(0.92 0.03 270) 100%
+  ); /* Soft Blue */
+  --gradient-accent: linear-gradient(
+    135deg,
+    oklch(0.83 0.13 25) 0%,
+    oklch(0.93 0.1 45) 100%
+  ); /* Rose Gold */
 }
 
 .dark {
   /* Dark Theme */
-  --background: oklch(0.20 0.01 240);   /* Dark Gray, Nearly Black */
-  --foreground: oklch(0.90 0.01 240);   /* Light Gray, Nearly White */
-  
-  /* Card and UI Element Colors */
-  --card: oklch(0.25 0.02 240);         /* Dark Gray */
-  --card-foreground: oklch(0.95 0 0);   /* White */
-  --popover: oklch(0.25 0.02 240);      /* Dark Gray Popover */
-  --popover-foreground: oklch(0.95 0 0); /* White */
-  
-  /* UI Colors */
-  --muted: oklch(0.30 0.02 240);        /* Darker Gray */
-  --muted-foreground: oklch(0.75 0.01 240); /* Light Gray */
-  --border: oklch(0.35 0.02 240);       /* Dark Border */
-  --input: oklch(0.35 0.02 240);        /* Dark Input Border */
-  
-  /* Secondary Colors */
-  --secondary: oklch(0.40 0.02 240);    /* Medium-Dark Gray */
-  --secondary-foreground: oklch(0.95 0 0); /* White */
-  
-  /* Accent for Dark Mode */
-  --accent: oklch(0.65 0.15 75);        /* Orange (slightly adjusted for dark mode) */
-  
-  /* Gradient Colors - Dark Mode */
-  --gradient-primary: linear-gradient(135deg, oklch(0.45 0.15 230) 0%, oklch(0.55 0.12 230) 100%);  /* Dark Blue Gradient */
-  --gradient-secondary: linear-gradient(135deg, oklch(0.35 0.02 240) 0%, oklch(0.45 0.01 240) 100%);  /* Dark Gray Gradient */
-  --gradient-accent: linear-gradient(135deg, oklch(0.60 0.15 75) 0%, oklch(0.70 0.15 75) 100%);  /* Orange Gradient */
-}
+  --background: oklch(0.2 0.01 240); /* Dark Gray, Nearly Black */
+  --foreground: oklch(0.9 0.01 240); /* Light Gray, Nearly White */
 
+  /* Card and UI Element Colors */
+  --card: oklch(0.25 0.02 240); /* Dark Gray */
+  --card-foreground: oklch(0.95 0 0); /* White */
+  --popover: oklch(0.25 0.02 240); /* Dark Gray Popover */
+  --popover-foreground: oklch(0.95 0 0); /* White */
+
+  /* UI Colors */
+  --muted: oklch(0.3 0.02 240); /* Darker Gray */
+  --muted-foreground: oklch(0.75 0.01 240); /* Light Gray */
+  --border: oklch(0.35 0.02 240); /* Dark Border */
+  --input: oklch(0.35 0.02 240); /* Dark Input Border */
+
+  /* Secondary Colors */
+  --secondary: oklch(0.4 0.02 240); /* Medium-Dark Gray */
+  --secondary-foreground: oklch(0.95 0 0); /* White */
+
+  /* Accent for Dark Mode */
+  --accent: oklch(0.65 0.15 75); /* Orange (slightly adjusted for dark mode) */
+
+  --gradient-primary: linear-gradient(
+    135deg,
+    oklch(0.45 0.2 200) 0%,
+    oklch(0.55 0.17 300) 100%
+  ); /* Teal → Violet (darkened) */
+  --gradient-secondary: linear-gradient(
+    135deg,
+    oklch(0.35 0.03 240) 0%,
+    oklch(0.45 0.02 270) 100%
+  ); /* Soft Blue (dark) */
+  --gradient-accent: linear-gradient(
+    135deg,
+    oklch(0.65 0.13 25) 0%,
+    oklch(0.75 0.12 45) 100%
+  ); /* Rose Gold (warm dark) */
+}
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);

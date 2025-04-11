@@ -20,6 +20,7 @@ import LogInButton from "../auth/LogInButton";
 import { Button, buttonVariants } from "../ui/button";
 import { Input } from "@/components/ui/input";
 import { Search, Book, Trophy, Settings, Moon, Sun } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 export default function Navbar() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -43,7 +44,7 @@ export default function Navbar() {
             <NavigationMenu className="my-2">
               <NavigationMenuList>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger>
+                  <NavigationMenuTrigger className="bg-transparent hover:bg-transparent focus:bg-transparent focus:shadow-none">
                     <Book className="w-4 h-4 mr-2" />
                     Browse
                   </NavigationMenuTrigger>
@@ -72,7 +73,7 @@ export default function Navbar() {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger>
+                  <NavigationMenuTrigger className="bg-transparent hover:bg-transparent focus:bg-transparent focus:shadow-none">
                     <Trophy className="w-4 h-4 mr-2" />
                     Rankings
                   </NavigationMenuTrigger>
@@ -98,7 +99,10 @@ export default function Navbar() {
                 <NavigationMenuItem>
                   <Link href="/studio" legacyBehavior passHref>
                     <NavigationMenuLink
-                      className={navigationMenuTriggerStyle()}
+                      className={cn(
+                        navigationMenuTriggerStyle(),
+                        "bg-transparent hover:bg-transparent focus:bg-transparent focus:shadow-none"
+                      )}
                     >
                       {/* <Pen className="w-4 h-4" /> */}
                       Author Studio
@@ -144,7 +148,7 @@ export default function Navbar() {
                   <Button className={buttonVariants()}>Log In</Button>
                 </LogInButton>
 
-                <Button className={buttonVariants({ variant: "secondary" })}>
+                <Button className={buttonVariants({ variant: "outline" })}>
                   Sign Up
                 </Button>
               </div>
@@ -154,7 +158,6 @@ export default function Navbar() {
                   Sign out
                 </Button>
               </div>
-              
             )}
           </div>
         </div>
