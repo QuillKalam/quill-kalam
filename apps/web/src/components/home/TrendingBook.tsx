@@ -2,11 +2,8 @@ import React from "react";
 import { Card, CardContent } from "../ui/card";
 import Image from "next/image";
 import Link from "next/link";
-export default function TrendingBook({
-  book,
-}: {
-  book: { image: string; title: string; position: number };
-}) {
+import { ITrendingBookProps } from "@/types/home/TrendingBookProps";
+export default function TrendingBook({ book }: ITrendingBookProps) {
   return (
     <React.Fragment>
       <Card className="gap-0 py-0 rounded-none border-none relative aspect-[4/5] bg-transparent shadow-none">

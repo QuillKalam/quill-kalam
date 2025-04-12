@@ -1,19 +1,14 @@
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-} from "@/components/ui/card";
 import TrendingBooks from "@/components/home/TrendingBooks";
+import { Card, CardContent } from "@/components/ui/card";
 import React from "react";
 
 export default function Home() {
   return (
     <React.Fragment>
       <Card className="m-2">
-        <CardHeader></CardHeader>
-        <CardContent></CardContent>
-        <CardFooter></CardFooter>
+        <CardContent className="">
+          <TrendingBooks />
+        </CardContent>
       </Card>
     </React.Fragment>
   );
