@@ -7,6 +7,7 @@ import {
 import React from "react";
 import TrendingBook from "./TrendingBook";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Button } from "../ui/button";
 
 export default async function TrendingBooks() {
   const trendingBooks = await getTrendingBooks();
@@ -18,8 +19,12 @@ export default async function TrendingBooks() {
           <div className="flex justify-between items-center ">
             <h1 className="text-2xl font-bold">Trending Books</h1>
             <section className="flex items-center space-x-2">
-              <ChevronLeft />
-              <ChevronRight />
+              <Button size="icon" variant="outline">
+                <ChevronLeft />
+              </Button>
+              <Button size="icon" variant="outline">
+                <ChevronRight />
+              </Button>
             </section>
           </div>
           <div className="w-full border-slate-200 border-[1px] my-2"></div>

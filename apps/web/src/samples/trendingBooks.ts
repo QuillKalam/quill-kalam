@@ -17,7 +17,7 @@ const trendingBooks: {
     genre: "Action, Fantasy",
     image: "/images/solo-leveling.webp",
     description:
-      "A weak hunter, Sung Jin-Woo, gains the ability to level up infinitely after surviving a deadly dungeon.",
+      "A weak hunter, Sung Jin-Woo, gains the ability to level up infinitely after surviving a deadly dungeon. lorem lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     status: "Completed",
     published: "2016-03-25",
   },
@@ -29,7 +29,7 @@ const trendingBooks: {
     genre: "Fantasy, Adventure",
     image: "/images/2.webp",
     description:
-      "Kim Dokja finds himself inside his favorite web novel, forced to survive as the world follows the story’s events.",
+      "Kim Dokja finds himself inside his favorite web novel, forced to survive as the world follows the story’s events. lorem lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     status: "Completed",
     published: "2018-01-30",
   },
@@ -41,7 +41,7 @@ const trendingBooks: {
     genre: "Fantasy, Action",
     image: "/images/3.webp",
     description:
-      "King Grey is reborn into a magical world, seeking a second chance to live a meaningful life.",
+      "King Grey is reborn into a magical world, seeking a second chance to live a meaningful life. lorem lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     status: "Ongoing",
     published: "2017-01-18",
   },
@@ -53,7 +53,7 @@ const trendingBooks: {
     genre: "Dark Fantasy, Xianxia",
     image: "/images/4.webp",
     description:
-      "Fang Yuan, a ruthless and cunning Gu Master, strives for eternal life in a cruel and lawless world.",
+      "Fang Yuan, a ruthless and cunning Gu Master, strives for eternal life in a cruel and lawless world. lorem lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     status: "Hiatus",
     published: "2012-06-20",
   },
@@ -65,7 +65,7 @@ const trendingBooks: {
     genre: "Mystery, Fantasy",
     image: "/images/5.webp",
     description:
-      "A man reincarnates into a steampunk world of occult powers and seeks to uncover its hidden truths.",
+      "A man reincarnates into a steampunk world of occult powers and seeks to uncover its hidden truths. lorem lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     status: "Completed",
     published: "2018-04-15",
   },
@@ -77,7 +77,7 @@ const trendingBooks: {
     genre: "Dark Fantasy, Magic",
     image: "/images/6.webp",
     description:
-      "Leylin, a scientist, is reincarnated into a ruthless world of magic, seeking absolute power.",
+      "Leylin, a scientist, is reincarnated into a ruthless world of magic, seeking absolute power. lorem lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     status: "Completed",
     published: "2015-05-10",
   },
@@ -89,7 +89,7 @@ const trendingBooks: {
     genre: "Fantasy, Adventure",
     image: "/images/7.webp",
     description:
-      "A man wakes up in a novel as the weakest noble, striving to survive and change his fate.",
+      "A man wakes up in a novel as the weakest noble, striving to survive and change his fate. lorem lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     status: "Ongoing",
     published: "2018-06-14",
   },
@@ -101,7 +101,7 @@ const trendingBooks: {
     genre: "Time Loop, Magic",
     image: "/images/8.webp",
     description:
-      "A young mage finds himself trapped in a time loop, striving to master magic and uncover secrets.",
+      "A young mage finds himself trapped in a time loop, striving to master magic and uncover secrets. lorem lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     status: "Completed",
     published: "2011-10-05",
   },
@@ -113,7 +113,7 @@ const trendingBooks: {
     genre: "Sci-Fi, System",
     image: "/images/9.webp",
     description:
-      "A game tester is transported into the game world as an NPC and must adapt to survive.",
+      "A game tester is transported into the game world as an NPC and must adapt to survive. lorem lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     status: "Completed",
     published: "2017-12-12",
   },
@@ -125,7 +125,7 @@ const trendingBooks: {
     genre: "Sci-Fi, Action",
     image: "/images/10.webp",
     description:
-      "A young man enters a mysterious sanctuary where genes determine strength and evolution.",
+      "A young man enters a mysterious sanctuary where genes determine strength and evolution. lorem lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     status: "Ongoing",
     published: "2016-04-20",
   },
@@ -137,7 +137,7 @@ const trendingBooks: {
     genre: "VRMMO, Adventure",
     image: "/images/11.webp",
     description:
-      "A struggling gamer stumbles upon an overpowered class in a VR game, changing his fate.",
+      "A struggling gamer stumbles upon an overpowered class in a VR game, changing his fate. lorem lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     status: "Ongoing",
     published: "2017-01-10",
   },
@@ -149,7 +149,7 @@ const trendingBooks: {
     genre: "Fantasy, Reincarnation",
     image: "/images/12.webp",
     description:
-      "A man with wasted potential gets a second chance at life in a mysterious otherworldly trial.",
+      "A man with wasted potential gets a second chance at life in a mysterious otherworldly trial. lorem lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     status: "Completed",
     published: "2018-02-22",
   },
@@ -161,7 +161,7 @@ const trendingBooks: {
     genre: "Fantasy, Reincarnation",
     image: "/images/13.webp",
     description:
-      "The soul of a powerful mage awakens in the body of a weak noble, seeking revenge.",
+      "The soul of a powerful mage awakens in the body of a weak noble, seeking revenge. lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     status: "Ongoing",
     published: "2019-03-17",
   },
@@ -173,7 +173,7 @@ const trendingBooks: {
     genre: "Revenge, Game System",
     image: "/images/14.webp",
     description:
-      "A man betrayed by the world's greatest hero gets a second chance to take revenge.",
+      "A man betrayed by the world's greatest hero gets a second chance to take revenge. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     status: "Completed",
     published: "2019-06-09",
   },
@@ -185,7 +185,7 @@ const trendingBooks: {
     genre: "Sci-Fi, System",
     image: "/images/15.webp",
     description:
-      "A man reincarnates into a futuristic world of deadly intergalactic games.",
+      "A man reincarnates into a  futuristic world of deadly intergalactic games. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     status: "Ongoing",
     published: "2020-05-03",
   },
