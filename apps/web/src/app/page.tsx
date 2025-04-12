@@ -6,7 +6,15 @@ export default function Home() {
   return (
     <React.Fragment>
       <Card className="m-2">
-        <CardContent className="">
+        <CardContent>
+          <h1 className="text-2xl font-bold">Welcome to QuillKalam</h1>
+          <p className="text-sm text-muted-foreground">
+            Your one-stop solution for all your book needs.
+          </p>
+        </CardContent>
+      </Card>
+      <Card className="m-2">
+        <CardContent>
           <TrendingBooks />
         </CardContent>
       </Card>
