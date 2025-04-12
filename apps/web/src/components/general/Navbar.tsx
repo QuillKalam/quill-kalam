@@ -21,7 +21,6 @@ import { Input } from "@/components/ui/input";
 import { Search, Book, Trophy, Settings, Moon, Sun } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Card, CardContent } from "../ui/card";
-import { SidebarTrigger } from "../ui/sidebar";
 
 export default function Navbar() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -31,12 +30,10 @@ export default function Navbar() {
     <React.Fragment>
       <Card className="m-2">
         <CardContent>
-          <nav>
-            <div className="flex items-center justify-between w-full px-4">
-              <div className="flex items-center">
-                <SidebarTrigger />
-
-                <Link href="/" className="mr-4">
+          <nav className="@container">
+            <div className="flex items-center justify-between w-full ">
+              <div className="@max-3xl:hidden flex items-center">
+                <Link href="/">
                   <Image
                     src="/logov3.png"
                     width={200}
@@ -120,12 +117,12 @@ export default function Navbar() {
 
               <div className="flex items-center gap-4">
                 {/* Search Bar */}
-                <div className="relative">
+                <div className="@max-xl:ml-8 relative">
                   <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
                   <Input
                     type="search"
                     placeholder="Search stories..."
-                    className="pl-8 w-64 h-9 rounded-full bg-muted/40 focus-visible:ring-offset-0"
+                    className="@max-xl:w-50 pl-8 w-64 h-9 rounded-full bg-muted/40 focus-visible:ring-offset-0"
                   />
                 </div>
 
@@ -148,7 +145,7 @@ export default function Navbar() {
 
                 {/* Auth Buttons */}
                 {true ? (
-                  <div className="flex items-center gap-4">
+                  <div className="@max-xl:hidden flex items-center gap-4">
                     <LogInButton>
                       <Button className={buttonVariants()}>Log In</Button>
                     </LogInButton>
@@ -158,7 +155,7 @@ export default function Navbar() {
                     </Button>
                   </div>
                 ) : (
-                  <div className="flex items-center gap-4">
+                  <div className="@max-xl:hidden flex items-center gap-4">
                     <Button
                       className={buttonVariants({ variant: "secondary" })}
                     >
