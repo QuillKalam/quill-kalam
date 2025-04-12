@@ -24,7 +24,7 @@ export default function TrendingBook({ book }: ITrendingBookProps) {
                   {book.title}
                 </span>
               </section>
-              <section className="block md:hidden absolute top-0 left-0 p-1 aspect-square z-10 bg-red-500">
+              <section className="block md:hidden absolute bottom-0 left-0 p-2 aspect-16/9 z-10 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-tr-xl">
                 # {String(book.position).padStart(2, "0")}
               </section>
               <div

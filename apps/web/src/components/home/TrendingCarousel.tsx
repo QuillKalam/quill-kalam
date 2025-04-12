@@ -34,7 +34,7 @@ export default function TrendingCarousel({
             {trendingBooks.map((book, index) => (
               <CarouselItem
                 key={index}
-                className="basis-1/2 md:basis-1/5 lg:basis-1/7 xl:1/8"
+                className="basis-1/2 sm:basis-1/3 md:basis-1/5 lg:basis-1/7 xl:1/8"
               >
                 <TrendingBook book={book} key={book.position} />
               </CarouselItem>
