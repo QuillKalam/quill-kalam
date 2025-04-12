@@ -25,29 +25,32 @@ export default function TrendingCarousel({
   }, [api]);
   return (
     <React.Fragment>
-      <section className="flex">
-        <Carousel className="w-[calc(100%-3.5rem)]" setApi={setApi}>
+      <section className="flex justify-between">
+        <Carousel
+          className="@container/carousel w-[calc(100%-3rem)]"
+          setApi={setApi}
+        >
           <CarouselContent>
             {trendingBooks.map((book, index) => (
               <CarouselItem
                 key={index}
-                className="basis-1/3 sm:basis-1/4 lg:basis-1/8"
+                className="basis-1/2 md:basis-1/5 lg:basis-1/7 xl:1/8"
               >
                 <TrendingBook book={book} key={book.position} />
               </CarouselItem>
             ))}
           </CarouselContent>
         </Carousel>
-        <section className="flex items-center flex-col ml-2 gap-2">
+        <section className="flex  flex-col  gap-2 ">
           <Button
             onClick={() => api?.scrollTo(current - 1)}
-            className="w-full h-1/2"
+            className="w-full grow"
           >
             <ChevronLeft />
           </Button>
           <Button
             onClick={() => api?.scrollTo(current + 1)}
-            className="w-full h-1/2"
+            className="w-full grow"
           >
             <ChevronRight />
           </Button>

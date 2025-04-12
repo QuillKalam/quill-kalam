@@ -8,9 +8,8 @@ export default async function TrendingBooks() {
   return (
     <React.Fragment>
       <section>
-        <div className="flex justify-start items-center ">
-          <h1 className="text-2xl font-bold">Trending Books</h1>
-        </div>
+        <h1 className="text-2xl font-bold">Trending Books</h1>
+
         <div className="w-full border-slate-200 border-[1px] my-2"></div>
         <TrendingCarousel trendingBooks={trendingBooks} />
       </section>

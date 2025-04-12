@@ -167,28 +167,7 @@ cd quill-kalam
 pnpm install
 ```
 
-If you have _**migrations**_ directory at location `/apps/web/prisma` delete it.
-
-- Create a new file named `.env` at `/apps/web` of the project and copy the contents of `env.md` into it.
-
-- Run command
-
-```bash
-pnpm docker:db
-```
-
-Navigate to `/apps/web` directory and run the following command to create the database:
-
-```bash
-npx primsa migrate reset(run for the very first time)
-pnpm prisma
-npx prisma migrate dev
-```
-
-Give any name for
-**Enter a name for the new migration**
-
-Navigate back to the root directory of the project and run the following command to start the development server:
+Run the following command to start the development server:
 
 ```bash
 pnpm dev:all
