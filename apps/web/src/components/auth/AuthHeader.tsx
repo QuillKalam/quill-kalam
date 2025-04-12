@@ -7,11 +7,10 @@ export default function AuthHeader({ label }: AuthHeaderProps) {
     <React.Fragment>
       <div className="w-full flex flex-col gap-4 items-center justify-center">
         <Image
-          src="/logov2.png"
-          width={250}
-          height={450}
+          src="/logov3.png"
+          width={450}
+          height={100}
           alt="Picture of the Quillkalam logo"
-          className="mix-blend-multiply"
         />
 
         <p className="text-muted-foreground  text-md">{label}</p>

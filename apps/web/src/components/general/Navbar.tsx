@@ -21,6 +21,7 @@ import { Input } from "@/components/ui/input";
 import { Search, Book, Trophy, Settings, Moon, Sun } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Card, CardContent } from "../ui/card";
+import { SidebarTrigger } from "../ui/sidebar";
 
 export default function Navbar() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -33,11 +34,13 @@ export default function Navbar() {
           <nav>
             <div className="flex items-center justify-between w-full px-4">
               <div className="flex items-center">
+                <SidebarTrigger />
+
                 <Link href="/" className="mr-4">
                   <Image
-                    src="/logov2.png"
-                    width={150}
-                    height={450}
+                    src="/logov3.png"
+                    width={200}
+                    height={480}
                     alt="Picture of the Quillkalam logo"
                     className="mix-blend-multiply"
                   />

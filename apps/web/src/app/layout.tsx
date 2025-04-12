@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/general/Navbar";
+import { StudioSidebar } from "@/components/studio/StudioSidebar";
+import { SidebarProvider } from "@/components/ui/sidebar";
+import { cookies } from "next/headers";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -60,6 +63,9 @@ export const metadata: Metadata = {
 export default async function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
+  const cookieStore = await cookies();
+  const defaultOpen = cookieStore.get("sidebar_state")?.value === "true";
+
   return (
     <html lang="en">
       <head>
@@ -71,8 +77,13 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
-        <Navbar />
-        {children}
+        <SidebarProvider defaultOpen={defaultOpen}>
+          <StudioSidebar />
+          <main className="flex flex-col min-h-screen w-full">
+            <Navbar />
+            {children}
+          </main>
+        </SidebarProvider>
       </body>
     </html>
   );
