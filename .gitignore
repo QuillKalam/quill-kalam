@@ -22,6 +22,7 @@ yarn-debug.log*
 # Turbo cache
 turbo/
 .cache/
+.daemon/
 
 # Python (FastAPI - apps/ai)
 __pycache__/
@@ -44,3 +45,8 @@ Thumbs.db
 *.local
 *.swp
 *.swo
+
+.turbo/
+*.turbo
+# Turborepo cache
+.turbo/*

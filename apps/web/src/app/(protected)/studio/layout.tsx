@@ -1,15 +1,13 @@
 import React from "react";
 
-export default function AuthLayout({
+export default async function StudioLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
     <React.Fragment>
-      <main className="h-full flex items-center justify-center ">
-        {children}
-      </main>
+      <main>{children}</main>
     </React.Fragment>
   );
 }

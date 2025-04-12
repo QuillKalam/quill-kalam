@@ -13,13 +13,6 @@ export const publicRoutes: string[] = ["/"];
 export const authRoutes: string[] = ["/auth/login", "/auth/register"];
 
 /**
- * prefix of API auth routes
- * routes that starts with this are API auth routes
- * @type {string}
- */
-export const apiAuthPrefix: string = "/api/auth";
-
-/**
  * the default redirect page after login
  * @type {string}
  */
