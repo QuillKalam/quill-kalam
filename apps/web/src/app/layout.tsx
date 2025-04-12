@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/general/Navbar";
-import { StudioSidebar } from "@/components/studio/StudioSidebar";
+import { CommonSidebar } from "@/components/general/CommonSidebar";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import { cookies } from "next/headers";
 
@@ -78,7 +78,7 @@ export default async function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
         <SidebarProvider defaultOpen={defaultOpen}>
-          <StudioSidebar />
+          <CommonSidebar />
           <main className="flex flex-col min-h-screen w-full">
             <Navbar />
             {children}
