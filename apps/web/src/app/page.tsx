@@ -1,18 +1,22 @@
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-} from "@/components/ui/card";
+import TrendingBooks from "@/components/home/TrendingBooks";
+import { Card, CardContent } from "@/components/ui/card";
 import React from "react";
 
 export default function Home() {
   return (
     <React.Fragment>
       <Card className="m-2">
-        <CardHeader></CardHeader>
-        <CardContent></CardContent>
-        <CardFooter></CardFooter>
+        <CardContent>
+          <h1 className="text-2xl font-bold">Welcome to QuillKalam</h1>
+          <p className="text-sm text-muted-foreground">
+            Your one-stop solution for all your book needs.
+          </p>
+        </CardContent>
+      </Card>
+      <Card className="m-2">
+        <CardContent>
+          <TrendingBooks />
+        </CardContent>
       </Card>
     </React.Fragment>
   );

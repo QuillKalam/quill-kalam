@@ -32,12 +32,13 @@ export default function Navbar() {
         <CardContent>
           <nav className="@container">
             <div className="flex items-center justify-between w-full ">
-              <div className="@max-3xl:hidden flex items-center">
+              <div className="@max-4xl:hidden flex items-center">
                 <Link href="/">
                   <Image
                     src="/logov3.png"
                     width={200}
                     height={480}
+                    priority={true}
                     alt="Picture of the Quillkalam logo"
                     className="mix-blend-multiply"
                   />
@@ -115,9 +116,9 @@ export default function Navbar() {
                 </NavigationMenu>
               </div>
 
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 @max-xl:gap-2">
                 {/* Search Bar */}
-                <div className="@max-xl:ml-8 relative">
+                <div className="@max-xl:ml-6 relative">
                   <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
                   <Input
                     type="search"
