@@ -38,6 +38,7 @@ export default function Navbar() {
                     src="/logov3.png"
                     width={200}
                     height={480}
+                    priority={true}
                     alt="Picture of the Quillkalam logo"
                     className="mix-blend-multiply"
                   />

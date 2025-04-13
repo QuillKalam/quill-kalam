@@ -1,4 +1,6 @@
-import { IBook } from "@/types/general/type";
-export interface ITrendingBookProps {
-  book: IBook;
+export interface TrendingBookProps {
+  image: string;
+  title: string;
+  id: number;
+  description: string;
 }

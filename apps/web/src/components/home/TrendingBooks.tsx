@@ -9,7 +9,6 @@ export default async function TrendingBooks() {
     <React.Fragment>
       <section>
         <h1 className="text-2xl font-bold">Trending Books</h1>
-
         <div className="w-full border-slate-200 border-[1px] my-2"></div>
         <TrendingCarousel trendingBooks={trendingBooks} />
       </section>

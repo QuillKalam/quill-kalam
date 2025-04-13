@@ -1,28 +1,39 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
 import TrendingBook from "./TrendingBook";
-import { ITrendingCarouselProps } from "@/types/home/TrendingCarouselProps";
+import { TrendingCarouselProps } from "@/types/home/TrendingCarouselProps";
 import { type CarouselApi } from "@/components/ui/carousel";
 import { Button } from "../ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+
 export default function TrendingCarousel({
   trendingBooks,
-}: ITrendingCarouselProps) {
-  const [api, setApi] = React.useState<CarouselApi>();
-  const [current, setCurrent] = React.useState(0);
+}: TrendingCarouselProps) {
+  const [api, setApi] = useState<CarouselApi>();
+  // in future implementaion this will be used to show the current slide
+  // remove the eslint rule when using it
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [_, setCurrent] = useState(0);
 
-  React.useEffect(() => {
-    if (!api) {
-      return;
-    }
+  const onSelect = useCallback(() => {
+    if (api) setCurrent(api.selectedScrollSnap());
+  }, [api]);
+
+  useEffect(() => {
+    if (!api) return;
 
     setCurrent(api.selectedScrollSnap());
+    api.on("select", onSelect);
 
-    api.on("select", () => {
-      setCurrent(api.selectedScrollSnap());
-    });
-  }, [api]);
+    return () => {
+      api.off("select", onSelect);
+    };
+  }, [api, onSelect]);
+
+  const handlePrevious = useCallback(() => api?.scrollPrev(), [api]);
+  const handleNext = useCallback(() => api?.scrollNext(), [api]);
+
   return (
     <React.Fragment>
       <section className="flex justify-between">
@@ -31,32 +42,40 @@ export default function TrendingCarousel({
           setApi={setApi}
         >
           <CarouselContent>
-            {trendingBooks.map((book, index) => (
+            {trendingBooks.map((book) => (
               <CarouselItem
-                key={index}
-                className="basis-1/2 sm:basis-1/3 md:basis-1/5 lg:basis-1/7 xl:1/8"
+                key={book.id ?? Math.random()}
+                className="basis-1/2 sm:basis-1/3 md:basis-1/5 lg:basis-1/7 xl:basis-1/8"
               >
-                <TrendingBook book={book} key={book.position} />
+                <TrendingBook
+                  id={book.id}
+                  title={book.title}
+                  image={book.image}
+                  description={book.description}
+                />
               </CarouselItem>
             ))}
           </CarouselContent>
         </Carousel>
-        <section className="flex  flex-col  gap-2 ">
+
+        <div className="flex flex-col gap-2">
           <Button
-            variant={"outline"}
-            onClick={() => api?.scrollTo(current - 1)}
+            variant="outline"
+            onClick={handlePrevious}
             className="w-full grow"
+            aria-label="Previous slide"
           >
             <ChevronLeft />
           </Button>
           <Button
-            variant={"outline"}
-            onClick={() => api?.scrollTo(current + 1)}
+            variant="outline"
+            onClick={handleNext}
             className="w-full grow"
+            aria-label="Next slide"
           >
             <ChevronRight />
           </Button>
-        </section>
+        </div>
       </section>
     </React.Fragment>
   );

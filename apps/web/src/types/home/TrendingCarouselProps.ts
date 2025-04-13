@@ -1,4 +1,8 @@
-import { IBook } from "@/types/general/type";
-export interface ITrendingCarouselProps {
-  trendingBooks: IBook[];
+import { TrendingBookProps } from "./TrendingBookProps";
+
+export interface TrendingCarouselProps {
+  trendingBooks: Pick<
+    TrendingBookProps,
+    "image" | "title" | "id" | "description"
+  >[];
 }
