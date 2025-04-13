@@ -43,12 +43,14 @@ export default function TrendingCarousel({
         </Carousel>
         <section className="flex  flex-col  gap-2 ">
           <Button
+            variant={"outline"}
             onClick={() => api?.scrollTo(current - 1)}
             className="w-full grow"
           >
             <ChevronLeft />
           </Button>
           <Button
+            variant={"outline"}
             onClick={() => api?.scrollTo(current + 1)}
             className="w-full grow"
           >
