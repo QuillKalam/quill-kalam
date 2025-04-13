@@ -38,6 +38,12 @@ export default function TrendingCarousel({
     <React.Fragment>
       <section className="flex justify-between">
         <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+            startIndex: 0,
+            skipSnaps: true,
+          }}
           className="@container/carousel w-[calc(100%-3rem)]"
           setApi={setApi}
         >
