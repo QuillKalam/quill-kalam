@@ -7,6 +7,7 @@ export class prismaService
   implements OnModuleInit, OnModuleDestroy
 {
   constructor() {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
     super({
       log:
         process.env.NODE_ENV === 'development'
@@ -16,10 +17,12 @@ export class prismaService
   }
 
   async onModuleInit() {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
     await this.$connect();
   }
 
   async onModuleDestroy() {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
     await this.$disconnect();
   }
 
@@ -32,7 +35,9 @@ export class prismaService
 
       return Promise.all(
         models.map((modelKey) => {
-          return this[modelKey.toString()].deleteMany();
+          return (
+            this[modelKey.toString()] as { deleteMany: () => Promise<unknown> }
+          ).deleteMany();
         }),
       );
     }
