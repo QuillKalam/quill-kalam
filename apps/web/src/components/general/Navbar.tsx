@@ -112,6 +112,19 @@ export default function Navbar() {
                         </NavigationMenuLink>
                       </Link>
                     </NavigationMenuItem>
+                    <NavigationMenuItem>
+                      <Link href="/feed" legacyBehavior passHref>
+                        <NavigationMenuLink
+                          className={cn(
+                            navigationMenuTriggerStyle(),
+                            "bg-transparent hover:bg-transparent focus:bg-transparent focus:shadow-none"
+                          )}
+                        >
+                          
+                          Threads
+                        </NavigationMenuLink>
+                      </Link>
+                    </NavigationMenuItem>
                   </NavigationMenuList>
                 </NavigationMenu>
               </div>

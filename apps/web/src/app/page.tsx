@@ -13,11 +13,20 @@ export default function Home() {
           </p>
         </CardContent>
       </Card>
-      <Card className="m-2">
-        <CardContent>
-          <TrendingBooks />
-        </CardContent>
-      </Card>
+      <section className="flex flex-row">
+        <Card className="m-2 flex-3">
+          <CardContent>
+            <TrendingBooks />
+          </CardContent>
+        </Card>
+        <Card className="m-2 flex-2">
+          <CardContent>
+            Yet To be decided
+            {/* <h2 className="text-xl font-bold mb-2">Feeds</h2>
+            <Feeds /> */}
+          </CardContent>
+        </Card>
+      </section>
     </React.Fragment>
   );
 }

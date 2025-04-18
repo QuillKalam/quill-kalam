@@ -51,7 +51,7 @@ export default function TrendingCarousel({
             {trendingBooks.map((book) => (
               <CarouselItem
                 key={book.id ?? Math.random()}
-                className="basis-1/2 sm:basis-1/3 md:basis-1/5 lg:basis-1/7 xl:basis-1/8"
+                className="basis-1/2 sm:basis-1/4"
               >
                 <TrendingBook
                   id={book.id}
