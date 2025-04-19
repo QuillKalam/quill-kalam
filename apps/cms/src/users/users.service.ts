@@ -58,6 +58,7 @@ export class UsersService {
     });
 
     // Remove sensitive information
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { password: _, verificationToken: __, ...result } = user;
     return result;
   }

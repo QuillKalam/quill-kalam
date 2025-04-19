@@ -34,14 +34,16 @@ const mockFetchFeeds = (): Promise<FeedItem[]> =>
 
 const AllFeeds = () => {
   const [feeds, setFeeds] = useState<FeedItem[]>([]);
-  const [page, setPage] = useState(0);
+  // disable eslint rule for setPage, as we are using it to trigger re-renders
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [_, setPage] = useState(0);
   const [loading, setLoading] = useState(false);
   const observerRef = useRef<HTMLDivElement | null>(null);
 
   const loadMore = async () => {
     if (loading) return;
     setLoading(true);
-    const newFeeds = await mockFetchFeeds(page);
+    const newFeeds = await mockFetchFeeds();
     setFeeds((prev) => [...prev, ...newFeeds]);
     setPage((prev) => prev + 1);
     setLoading(false);
